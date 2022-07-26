@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin fashion with tailwind</title>
+
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                headerbackground : '#FFFBF0',
+                headerLine: '#FABE4C',
+                headerLine1: '#363958',
+                btncolor : '#A4BC46',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+
+    <header class="bg-headerbackground body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           
+          <img class="w-60" src="icons/Group 33072.png" alt="">
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center uppercase">
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">Product</a>
+            <a class="mr-5 hover:text-gray-900">About Us</a>
+            <a class="mr-5 hover:text-gray-900">Contact Us</a>
+          </nav>
+         
+        </div>
+
+        <section>
+            <div class="container mx-auto flex items-center justify-around p-6">
+                <div class="">
+                    <h1 class="text-6xl font-bold"><span class="text-headerLine">Be the Penguins</span> <br> <span class="text-headerLine1">of Winter</span></h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                    <div class="bg-btncolor ">
+                        <img class="inline-block" src="icons/shopping-cart 1.png" alt="">
+                    <button type="submit">  Buy Now</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/model.png" alt="">
+                </div>
+
+            </div>
+        </section>
+      </header>
+    
+</body>
+</html>
